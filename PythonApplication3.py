@@ -175,8 +175,7 @@ answer=date(day, month, year)
 print(answer)
 
 #6#######################################################################
-def is_prime(number):
-  from math import*  
+def is_prime(number):  
     # Все четные числа кроме 2 непростые
     if number % 2 == 0 and number != 2:
         return False
@@ -184,7 +183,7 @@ def is_prime(number):
     if number == 0 or number == 1:
         return False
     # Перебираем числа от 3 до корня из введенного, шаг - 2
-    for n in range(3, int(sqrt(number).real) + 1, 2):
+    for n in range(3, int((number).real) + 1, 2):
         if number % n == 0:  # Если число делится нацело, то оно непростое
             return False
     return True  # Остальные числа простые
@@ -266,7 +265,7 @@ while True:
         break
 
 while True:
-    if not z.isdigit():
+    if not z.upper():
         print("Ошибка ввода!")
         print("Используйте только целые числа.")
         z = input("Введите знак: ")
@@ -274,7 +273,7 @@ while True:
     else:
         break
 
-z = int(z)
+z = int(+,)
 while True:
     if z == 0:
         print("Такого года несуществует")
