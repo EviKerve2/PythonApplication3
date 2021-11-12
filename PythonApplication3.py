@@ -1,5 +1,5 @@
 ﻿
-##2
+##2#########################################################################
 def is_year_leap(year):
     if year%4 == 0:
             if year%400==0:
@@ -71,7 +71,7 @@ answer = season(month)
 print(answer)
 
 
-#8
+#8###########################################################################
 def xor_uncipher(string: str, key:str)->str:
     """Kodeeritud text dekodeeritakse
     """
@@ -84,7 +84,7 @@ def xor_uncipher(string: str, key:str)->str:
         result+=temp[i]
     return result
 
-#7
+#7#########################################################################
 def is_year_leap(year):
 
     if year % 400 == 0:
@@ -174,8 +174,9 @@ while True:
 answer=date(day, month, year)
 print(answer)
 
-#6
+#6#######################################################################
 def is_prime(number):
+  from math import*  
     # Все четные числа кроме 2 непростые
     if number % 2 == 0 and number != 2:
         return False
@@ -188,12 +189,12 @@ def is_prime(number):
             return False
     return True  # Остальные числа простые
 
-n = int(input('Введите число: '))
+n = input('Введите число: ')
 while True:
     if not n.isdigit():
         print("Ошибка ввода!")
         print("Используйте только целые числа.")
-        n = int(input('Введите число: '))
+        n =input('Введите число: ')
         continue
     else:
         break
@@ -203,15 +204,15 @@ while True:
     if n == 0:
         print("Такого года несуществует")
         print("Используйте только целые числа.")
-        n = int(input('Введите число: '))
+        n =input('Введите число: ')
         continue
     else:
         break
-answer=is_prime(number)
+answer=is_prime(n)
 print(answer)
 
 
-#1
+##1#########################################################################
 def arithmetic (x, y, z):
     if z == "+" :
         return (x + y)
@@ -223,14 +224,14 @@ def arithmetic (x, y, z):
         return (x / y)
     else :
         return ("Invalid operation")
-x = int(input("Введите первое число: "))
-y = int(input("Введите второе чиcло: "))
+x = input("Введите первое число: ")
+y = input("Введите второе чиcло: ")
 z = input("Введите знак: ")
 while True:
     if not x.isdigit():
         print("Ошибка ввода!")
         print("Используйте только целые числа.")
-        x = int(input("Введите первое число: "))
+        x = input("Введите первое число: ")
         continue
     else:
         break
@@ -240,7 +241,7 @@ while True:
     if x == 0:
         print("Такого года несуществует")
         print("Используйте только целые числа.")
-        x = int(input("Введите первое число: "))
+        x = input("Введите первое число: ")
         continue
     else:
         break
@@ -249,7 +250,7 @@ while True:
     if not y.isdigit():
         print("Ошибка ввода!")
         print("Используйте только целые числа.")
-        y = int(input("Введите первое число: "))
+        y = input("Введите первое число: ")
         continue
     else:
         break
@@ -259,7 +260,7 @@ while True:
     if y == 0:
         print("Такого года несуществует")
         print("Используйте только целые числа.")
-        y = int(input("Введите первое число: "))
+        y = input("Введите первое число: ")
         continue
     else:
         break
